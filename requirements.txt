@@ -1,0 +1,7 @@
+pymysql==1.1.1
+uvicorn==0.34.2
+fastapi==0.115.12
+sqlalchemy==2.0.40
+pandas==2.2.2
+numpy==2.0.2
+pydantic==2.11.4
