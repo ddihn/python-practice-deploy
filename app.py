@@ -53,7 +53,7 @@ def totalQtySum(inYear):
         FROM feature_regression_example
         WHERE year = %s
     """
-    resultDf = pd.read_sql(sql=query, con=myngine, params=[inYear])
+    resultDf = pd.read_sql(sql=query, con=myngine, params=(inYear,))
     result = resultDf["sum_qty"].values[0]
     return result
 
